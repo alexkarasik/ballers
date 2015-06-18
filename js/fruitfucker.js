@@ -1,0 +1,1 @@
+var fruits = ['http://www.arthursclipart.org/fruits/fruit/apple%208.gif']
