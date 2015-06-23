@@ -4,10 +4,11 @@ $(document).ready(function() {
                      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg',
                      'http://pngimg.com/upload/kiwi_PNG4035.png']
   $('button').click(function(e) {
-    
-    var fruitUrl = fruitUrls.shift()
-    console.log(fruitUrls)
-    
-    $('img').attr('src', fruitUrl)
+    if (fruitUrls.length == 0) {
+ 	  alert("You're out of fruit buddy!")
+    } else {
+      var fruitUrl = fruitUrls.shift()
+      $('img').attr('src', fruitUrl)
+    }
   })
 })
